@@ -1,0 +1,32 @@
+{
+  "name": "quizzapp",
+  "version": "1.0.0",
+  "description": "quizzapp",
+  "main": "server.ts",
+  "scripts": {
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/server.ts",
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ncutixavier/quizzapp.git"
+  },
+  "keywords": [
+    "quizzapp"
+  ],
+  "author": "ncutixavier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ncutixavier/quizzapp/issues"
+  },
+  "homepage": "https://github.com/ncutixavier/quizzapp#readme",
+  "dependencies": {
+    "apollo-server-express": "^3.13.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "graphql": "^16.9.0",
+    "mongoose": "^8.5.2",
+    "nodemon": "^3.1.4",
+    "typescript": "^5.5.4"
+  }
+}
