@@ -1,7 +1,17 @@
 import { gql } from 'apollo-server-express';
+import { questionTypeDefs } from './question.schema';
 
-export const typeDefs = gql`
+const rootTypeDefs = gql`
   type Query {
-    hello: String
+    _empty: String
+  }
+
+  type Mutation {
+    _empty: String
   }
 `;
+
+export const typeDefs = [
+    rootTypeDefs, 
+    questionTypeDefs,
+];

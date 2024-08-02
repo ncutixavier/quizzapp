@@ -1,6 +1,10 @@
+import { questionResolvers } from "./question.resolver";
+
 export const resolvers = {
     Query: {
-      hello: () => 'Hello world!',
+      ...questionResolvers.Query,
     },
+    Mutation: {
+        ...questionResolvers.Mutation,
+    }
   };
-  
